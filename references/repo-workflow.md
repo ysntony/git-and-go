@@ -39,6 +39,8 @@ scripts/
 
 This keeps the barrier low while still building repo-first habits. The personal repo can be the current source of truth until a shared team repo exists. Later, project folders can be copied or migrated into the shared repo.
 
+When the personal repo does not exist yet, use `references/gitlab-bootstrap.md` to create it with `glab` or the GitLab API before organizing project files.
+
 ## Top-Level Meaning
 
 - `projects/`: active or completed project-shaped work with owner, context, updates, links, and decisions.
