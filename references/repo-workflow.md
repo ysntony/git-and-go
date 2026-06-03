@@ -17,6 +17,28 @@ Use this reference when the repo has no stronger local convention.
 
 Do not create all folders automatically. Create only what the current task needs.
 
+## Personal Repo First
+
+If there is no shared Growth Marketing repo yet, a teammate's own internally visible GitLab repo is a valid starting point.
+
+Prefer one personal workspace repo per teammate, for example:
+
+```text
+https://dev.msh.team/<username>/growth-work
+```
+
+Inside that repo, use the same structure:
+
+```text
+projects/
+knowledge/
+routines/
+templates/
+scripts/
+```
+
+This keeps the barrier low while still building repo-first habits. The personal repo can be the current source of truth until a shared team repo exists. Later, project folders can be copied or migrated into the shared repo.
+
 ## Top-Level Meaning
 
 - `projects/`: active or completed project-shaped work with owner, context, updates, links, and decisions.

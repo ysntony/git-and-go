@@ -20,6 +20,7 @@ The skill exists to coach the workflow:
 - turn work into durable repo artifacts
 - help people think in project folders and source files
 - make the repo the source of truth
+- allow personal internally visible GitLab repos as the first workspace before a shared team repo exists
 - review diffs before committing
 - help with commit / push / GitLab MR habits and ship loops
 - make Feishu CLI discoverable as an optional tool
@@ -35,6 +36,8 @@ The concise framing is:
 Durable, reusable, reviewable, or AI-readable work should live in the repo.
 
 Feishu docs, messages, sheets, or CRM records may be useful, but they should not replace the repo as the team's long-term source of truth.
+
+Before a shared Growth Marketing repo exists, each teammate can use a personal internally visible GitLab repo as their working source of truth.
 
 ### Feishu-optional
 
@@ -93,6 +96,7 @@ The main skill should trigger when helping Growth Marketing teammates:
 
 - create or update project folders
 - onboard existing projects that currently live in Feishu, local files, chat, sheets, or people's heads
+- help teammates start in personal GitLab repos when no shared team repo exists
 - turn ideas, chat notes, Feishu context, or loose work into repo artifacts
 - organize repo structure
 - review diffs

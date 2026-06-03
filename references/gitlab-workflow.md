@@ -31,7 +31,19 @@ If the branch has no upstream yet, push with:
 git push -u origin <branch>
 ```
 
-If no remote exists, ask for the GitLab repository URL, then add it as `origin`.
+If no remote exists, ask for the GitLab repository URL, then add it as `origin`. If there is no shared team repo, a personal internally visible GitLab repo is acceptable.
+
+For a first personal workspace, suggest a simple repo name such as:
+
+```text
+growth-work
+```
+
+The GitLab URL will often look like:
+
+```text
+https://dev.msh.team/<username>/growth-work
+```
 
 ## What to Ship
 
