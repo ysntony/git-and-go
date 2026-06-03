@@ -10,7 +10,9 @@ Use this reference when the user asks to commit, push, create a merge request, o
 - Review meaningful diffs before committing.
 - Do not commit secrets, tokens, private customer data, or accidental local artifacts.
 
-## Basic Flow
+## Ship Loop
+
+Use this loop to make repo-first work visible and reviewable:
 
 ```bash
 git status --short
@@ -22,6 +24,24 @@ git push
 ```
 
 Use the repo's existing branch and commit conventions if present.
+
+If the branch has no upstream yet, push with:
+
+```bash
+git push -u origin <branch>
+```
+
+If no remote exists, ask for the GitLab repository URL, then add it as `origin`.
+
+## What to Ship
+
+Stage only files related to the current work. For repo-onboarding or marketing operations, this often means:
+
+- project folder files such as `brief.md`, `updates.md`, `links.md`, and optional `decisions.md`
+- templates or workflow docs created for this task
+- scripts that the task actually needs
+
+Do not stage unrelated local notes, exports, screenshots, credentials, or generated clutter.
 
 ## Commit Messages
 
@@ -55,6 +75,26 @@ If creating or preparing a GitLab MR, include:
 ```
 
 For non-engineering artifacts, "How to review" should tell reviewers what judgment is needed, not just which files changed.
+
+For existing work that was newly repo-ized, reviewers should usually check factual accuracy:
+
+```markdown
+## What changed
+
+Added repo source files for an in-progress project.
+
+## Why
+
+Move scattered project context, links, status, and next steps into the repo as the durable working record.
+
+## How to review
+
+Please check whether the owner, current status, links, open questions, and next steps are accurate.
+
+## Follow-ups
+
+Continue recording project updates in `updates.md`.
+```
 
 ## Teaching Notes
 

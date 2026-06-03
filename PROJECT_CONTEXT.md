@@ -16,11 +16,12 @@ It should not teach domain experts how to do ads, KOL, brand, social, creative, 
 
 The skill exists to coach the workflow:
 
+- onboard already-running work into a repo
 - turn work into durable repo artifacts
 - help people think in project folders and source files
 - make the repo the source of truth
 - review diffs before committing
-- help with commit / push / GitLab MR habits
+- help with commit / push / GitLab MR habits and ship loops
 - make Feishu CLI discoverable as an optional tool
 
 The concise framing is:
@@ -71,11 +72,13 @@ git-and-go/
   SKILL.md
   agents/openai.yaml
   references/
-    repo-workflow.md
+    existing-work-onboarding.md
     gitlab-workflow.md
     feishu-cli.md
+    repo-workflow.md
   assets/templates/
     project-brief.md
+    project-decisions.md
     project-updates.md
     project-links.md
 ```
@@ -89,6 +92,7 @@ Future separate skills may be useful only if a workflow becomes large, frequent,
 The main skill should trigger when helping Growth Marketing teammates:
 
 - create or update project folders
+- onboard existing projects that currently live in Feishu, local files, chat, sheets, or people's heads
 - turn ideas, chat notes, Feishu context, or loose work into repo artifacts
 - organize repo structure
 - review diffs
@@ -99,7 +103,7 @@ The main skill should trigger when helping Growth Marketing teammates:
 The skill should generally follow this workflow:
 
 1. Orient in the repo.
-2. Decide whether the user is starting work, updating work, recording knowledge, running a routine, or shipping.
+2. Decide whether the user is onboarding existing work, starting work, updating work, recording knowledge, running a routine, or shipping.
 3. Create or update the smallest useful artifact.
 4. Review changed files and diffs.
 5. Commit / push / prepare MR only when requested.
@@ -144,8 +148,8 @@ We chose `git-and-go` because it feels practical, lightweight, and action-orient
 
 ## Next Good Steps
 
-1. Initialize this directory as a Git repo.
-2. Commit the first version of the skill.
-3. Test the skill on one realistic workflow, such as creating a developer-growth project folder.
-4. Refine `references/repo-workflow.md` based on that test.
+1. Test the skill on one realistic existing-work onboarding flow, such as repo-izing an active ads or developer-growth project.
+2. Refine `references/existing-work-onboarding.md` and `references/repo-workflow.md` based on that test.
+3. Decide how GitLab MR creation should be handled: CLI, manual instructions, or helper script.
+4. Add deploy workflow guidance if teammates need to publish landing pages, sites, or tools from these repos.
 5. Add only the scripts that become repeated and stable.

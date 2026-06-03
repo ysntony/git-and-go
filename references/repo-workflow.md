@@ -68,7 +68,7 @@ updates.md
 links.md
 ```
 
-Use only `brief.md` if the user is still exploring. Add other files when they become useful.
+Use only `brief.md` if the user is still exploring. Add other files when they become useful. For existing work being moved into the repo, prefer all three files so the repo can immediately become working memory.
 
 ### `brief.md`
 
@@ -118,6 +118,23 @@ Track source and collaboration links:
 - Data:
 - External:
 ```
+
+## Repo as Source of Truth
+
+Treat repo artifacts as the durable record for project state:
+
+- `brief.md`: what this project is, who owns it, why it exists, current status, open questions, and next steps.
+- `updates.md`: dated progress, decisions, risks, and next action.
+- `links.md`: where source material, collaboration surfaces, assets, data, and deployed outputs live.
+- `decisions.md`: optional dated decision log when decisions need a separate trail.
+
+External tools are not ignored:
+
+- Feishu docs, sheets, bases, chats, and meetings can be source material or human-facing collaboration surfaces.
+- local folders can hold raw assets or exports, but the repo should record what they are and where they live.
+- dashboards and ad platforms can remain external systems of execution, but the repo should link to them and record the working interpretation supplied by the domain owner.
+
+When a fact changes, update the repo artifact first or in the same working session as the external update. Avoid leaving important project state only in chat, local desktop files, or memory.
 
 ## Knowledge Artifacts
 

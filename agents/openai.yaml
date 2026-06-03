@@ -1,8 +1,8 @@
 interface:
   display_name: "Git and Go"
-  short_description: "Repo-first workflow coach for Growth Marketing"
+  short_description: "Repo-first commit, push, and MR coach for Growth Marketing"
   brand_color: "#16A34A"
-  default_prompt: "Use $git-and-go to turn this work into a repo artifact, review the diff, and help me ship it."
+  default_prompt: "Use $git-and-go to repo-ize this work, review the diff, commit, push, and prepare MR context."
 
 policy:
   allow_implicit_invocation: true
