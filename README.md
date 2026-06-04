@@ -2,7 +2,7 @@
 
 Language: English | [中文](README.zh-CN.md)
 
-`git-and-go` is a Codex / Claude Code skill that helps people turn everyday work into repo-first, reviewable, AI-readable project artifacts.
+`git-and-go` is a Codex / Claude Code / Kimi Code skill that helps people turn everyday work into repo-first, reviewable, AI-readable project artifacts.
 
 It is GitHub-first: it helps you set up or use a personal GitHub repo, organize ongoing work into files, review diffs, commit, push, and prepare pull request context.
 
@@ -54,9 +54,29 @@ git clone https://github.com/ysntony/git-and-go.git ~/.claude/skills/git-and-go
 
 Then restart Claude Code.
 
+## Install In Kimi Code
+
+Ask Kimi Code:
+
+```text
+Please install the git-and-go skill.
+The repo is: https://github.com/ysntony/git-and-go
+Install it to ~/.kimi-code/skills/git-and-go.
+After installing, tell me whether I need to restart Kimi Code.
+```
+
+Or install manually:
+
+```bash
+mkdir -p ~/.kimi-code/skills
+git clone https://github.com/ysntony/git-and-go.git ~/.kimi-code/skills/git-and-go
+```
+
+Then restart Kimi Code.
+
 ## Use It
 
-After installing, talk to Codex or Claude Code naturally:
+After installing, talk to Codex, Claude Code, or Kimi Code naturally:
 
 ```text
 Use git-and-go to repo-ize my current project.
@@ -74,12 +94,13 @@ Create the project files, review the diff, commit, push, and prepare pull reques
 
 ## Update
 
-Ask Codex or Claude Code:
+Ask Codex, Claude Code, or Kimi Code:
 
 ```text
 Please update the git-and-go skill to the latest version.
 If I use Codex, update ~/.codex/skills/git-and-go.
 If I use Claude Code, update ~/.claude/skills/git-and-go.
+If I use Kimi Code, update ~/.kimi-code/skills/git-and-go.
 After updating, tell me whether I need to restart.
 ```
 
@@ -94,6 +115,13 @@ or:
 
 ```bash
 cd ~/.claude/skills/git-and-go
+git pull
+```
+
+or:
+
+```bash
+cd ~/.kimi-code/skills/git-and-go
 git pull
 ```
 

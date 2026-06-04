@@ -191,6 +191,7 @@ If creating repo-level agent files, keep them short:
 
 - `AGENTS.md`: rules for Codex and other coding agents.
 - `CLAUDE.md`: Claude Code-specific mirror or additions.
+- Kimi Code uses `SKILL.md` skills too; add tool-specific mirror files only when the repo already uses them.
 
 Both should reinforce:
 

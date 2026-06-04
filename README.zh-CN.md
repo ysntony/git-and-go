@@ -2,7 +2,7 @@
 
 语言：[English](README.md) | 中文
 
-`git-and-go` 是一个可以在 Codex / Claude Code 里使用的 skill。它帮助你把日常工作整理成 repo 里的项目文件，让 repo 成为项目事实源，并带着你完成检查改动、提交、推送和准备 Pull Request 描述。
+`git-and-go` 是一个可以在 Codex / Claude Code / Kimi Code 里使用的 skill。它帮助你把日常工作整理成 repo 里的项目文件，让 repo 成为项目事实源，并带着你完成检查改动、提交、推送和准备 Pull Request 描述。
 
 这个公开版本以 GitHub 为默认平台：如果你还没有 repo，它会优先帮助你用 GitHub 和 `gh` 创建或连接一个个人工作 repo。
 
@@ -54,9 +54,29 @@ git clone https://github.com/ysntony/git-and-go.git ~/.claude/skills/git-and-go
 
 然后重启 Claude Code。
 
+## 在 Kimi Code 里安装
+
+直接对 Kimi Code 说：
+
+```text
+请帮我安装 git-and-go skill。
+仓库地址是：https://github.com/ysntony/git-and-go
+请安装到 ~/.kimi-code/skills/git-and-go。
+安装完成后，请告诉我是否需要重启 Kimi Code。
+```
+
+也可以手动安装：
+
+```bash
+mkdir -p ~/.kimi-code/skills
+git clone https://github.com/ysntony/git-and-go.git ~/.kimi-code/skills/git-and-go
+```
+
+然后重启 Kimi Code。
+
 ## 如何使用
 
-安装后，直接用自然语言和 Codex / Claude Code 对话：
+安装后，直接用自然语言和 Codex / Claude Code / Kimi Code 对话：
 
 ```text
 使用 git-and-go 帮我把当前项目 repo 化。
@@ -74,12 +94,13 @@ git clone https://github.com/ysntony/git-and-go.git ~/.claude/skills/git-and-go
 
 ## 如何更新
 
-直接对 Codex / Claude Code 说：
+直接对 Codex / Claude Code / Kimi Code 说：
 
 ```text
 请帮我把 git-and-go skill 更新到最新版。
 如果我使用 Codex，请更新 ~/.codex/skills/git-and-go。
 如果我使用 Claude Code，请更新 ~/.claude/skills/git-and-go。
+如果我使用 Kimi Code，请更新 ~/.kimi-code/skills/git-and-go。
 更新完成后，请告诉我是否需要重启。
 ```
 
@@ -94,6 +115,13 @@ git pull
 
 ```bash
 cd ~/.claude/skills/git-and-go
+git pull
+```
+
+或者：
+
+```bash
+cd ~/.kimi-code/skills/git-and-go
 git pull
 ```
 
