@@ -19,12 +19,12 @@ Do not create all folders automatically. Create only what the current task needs
 
 ## Personal Repo First
 
-If there is no shared Growth Marketing repo yet, a teammate's own internally visible GitLab repo is a valid starting point.
+If there is no shared repo yet, a user's own GitHub or GitLab repo is a valid starting point.
 
-Prefer one personal workspace repo per teammate, for example:
+Prefer one personal workspace repo per person, for example:
 
 ```text
-https://dev.msh.team/<username>/growth-work
+repo-work
 ```
 
 Inside that repo, use the same structure:
@@ -37,9 +37,9 @@ templates/
 scripts/
 ```
 
-This keeps the barrier low while still building repo-first habits. The personal repo can be the current source of truth until a shared team repo exists. Later, project folders can be copied or migrated into the shared repo.
+This keeps the barrier low while still building repo-first habits. The personal repo can be the current source of truth until a shared repo exists. Later, project folders can be copied or migrated into the shared repo.
 
-When the personal repo does not exist yet, use `references/gitlab-bootstrap.md` to create it with `glab` or the GitLab API before organizing project files.
+When the personal repo does not exist yet, use `references/remote-repo-bootstrap.md` to create it with `gh`, `glab`, or the provider API before organizing project files.
 
 ## Top-Level Meaning
 
@@ -47,39 +47,39 @@ When the personal repo does not exist yet, use `references/gitlab-bootstrap.md` 
 - `knowledge/`: durable references, definitions, research notes, channel context, metrics notes, and tool notes.
 - `routines/`: recurring workflows such as weekly reviews, feedback digests, reporting, or repeated operational checks.
 - `templates/`: reusable source templates for project briefs, updates, reviews, and other artifacts.
-- `scripts/`: helper scripts for repeatable tasks, including optional Feishu or GitLab helpers.
+- `scripts/`: helper scripts for repeatable tasks, including optional GitHub/GitLab or cloud-tool helpers.
 
 ## Project Categories
 
-Use business-area folders only as containers, not as strategy guides:
+Use project-area folders only as containers, not as strategy guides. Choose names that match the user's life and work:
 
 ```text
 projects/
-  ads/
+  work/
+  personal/
+  learning/
+  home/
   creative/
-  social/
-  kol/
-  brand/
-  developer-growth/
+  finance/
 ```
 
-Use `developer-growth/` for GitHub, open-source, developer ecosystem, technical community, and developer partnership work.
+Use a new area only when it helps the user find work later.
 
 ## Project Folder Naming
 
 Prefer date-prefixed, lowercase, hyphenated names:
 
 ```text
-projects/developer-growth/2026-06-github-open-source-partners/
-projects/kol/2026-06-creator-wave-01/
-projects/ads/2026-06-search-landing-test/
+projects/work/2026-06-portfolio-refresh/
+projects/home/2026-06-kitchen-planning/
+projects/learning/2026-06-python-course/
 ```
 
 If the work is not date-bound, omit the date:
 
 ```text
 knowledge/metrics/activation-definitions.md
-knowledge/tools/feishu-cli-notes.md
+knowledge/tools/automation-notes.md
 ```
 
 ## Minimal Project Files
@@ -136,8 +136,8 @@ Track source and collaboration links:
 ```markdown
 # Links
 
-- Feishu:
-- GitLab:
+- Cloud docs:
+- GitHub/GitLab:
 - Assets:
 - Data:
 - External:
@@ -154,9 +154,9 @@ Treat repo artifacts as the durable record for project state:
 
 External tools are not ignored:
 
-- Feishu docs, sheets, bases, chats, and meetings can be source material or human-facing collaboration surfaces.
+- cloud docs, sheets, chats, and meetings can be source material or human-facing collaboration surfaces.
 - local folders can hold raw assets or exports, but the repo should record what they are and where they live.
-- dashboards and ad platforms can remain external systems of execution, but the repo should link to them and record the working interpretation supplied by the domain owner.
+- dashboards and external tools can remain systems of execution, but the repo should link to them and record the working interpretation supplied by the user.
 
 When a fact changes, update the repo artifact first or in the same working session as the external update. Avoid leaving important project state only in chat, local desktop files, or memory.
 
@@ -165,9 +165,8 @@ When a fact changes, update the repo artifact first or in the same working sessi
 Use `knowledge/` for durable facts that multiple projects may reference:
 
 ```text
-knowledge/channels/
-knowledge/audiences/
-knowledge/competitors/
+knowledge/topics/
+knowledge/people/
 knowledge/metrics/
 knowledge/tools/
 ```
@@ -180,8 +179,8 @@ Use `routines/` for repeated processes:
 
 ```text
 routines/weekly-review/
-routines/feedback-digest/
-routines/campaign-review/
+routines/reading-notes/
+routines/project-review/
 ```
 
 A routine should contain source templates, scripts, and generated outputs only when needed.
@@ -196,6 +195,6 @@ If creating repo-level agent files, keep them short:
 Both should reinforce:
 
 - repo-first durable artifacts
-- domain-owner-led work
+- user-led work
 - diff before commit
-- Feishu CLI as optional capability
+- remote repo creation with `gh`, `glab`, or provider APIs when needed

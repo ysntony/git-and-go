@@ -1,6 +1,6 @@
-# GitLab Workflow
+# Git Workflow
 
-Use this reference when the user asks to commit, push, create a merge request, or ship work.
+Use this reference when the user asks to commit, push, create a pull request or merge request, or ship work.
 
 ## Safety Rules
 
@@ -31,23 +31,11 @@ If the branch has no upstream yet, push with:
 git push -u origin <branch>
 ```
 
-If no remote exists, read `references/gitlab-bootstrap.md`. Help the user create or connect a GitLab repo, preferably with `glab`. If there is no shared team repo, a personal internally visible GitLab repo is acceptable.
-
-For a first personal workspace, suggest a simple repo name such as:
-
-```text
-growth-work
-```
-
-The GitLab URL will often look like:
-
-```text
-https://dev.msh.team/<username>/growth-work
-```
+If no remote exists, read `references/remote-repo-bootstrap.md`. Help the user create or connect a GitHub/GitLab repo, preferably with `gh` or `glab`.
 
 ## What to Ship
 
-Stage only files related to the current work. For repo-onboarding or marketing operations, this often means:
+Stage only files related to the current work. For repo-onboarding or everyday work, this often means:
 
 - project folder files such as `brief.md`, `updates.md`, `links.md`, and optional `decisions.md`
 - templates or workflow docs created for this task
@@ -60,9 +48,9 @@ Do not stage unrelated local notes, exports, screenshots, credentials, or genera
 Prefer short, concrete messages:
 
 ```text
-docs: add GitHub developer growth project brief
-docs: update weekly growth review
-chore: add repo-first workflow instructions
+docs: add project brief
+docs: update weekly review
+chore: add repo-first workspace
 ```
 
 Useful prefixes:
@@ -72,9 +60,9 @@ Useful prefixes:
 - `feat:` for user-facing tools or automations
 - `fix:` for correcting broken scripts, workflows, or docs
 
-## Merge Request Context
+## PR/MR Context
 
-If creating or preparing a GitLab MR, include:
+If creating or preparing a pull request or merge request, include:
 
 ```markdown
 ## What changed
@@ -110,11 +98,11 @@ Continue recording project updates in `updates.md`.
 
 ## Teaching Notes
 
-When teammates are learning Git, keep explanations short:
+When users are learning Git, keep explanations short:
 
 - `status` shows what changed.
 - `diff` shows exact edits.
 - `add` chooses what goes into the commit.
 - `commit` records a checkpoint.
-- `push` sends local work to GitLab.
-- MR asks others to review before merging.
+- `push` sends local work to the remote repo.
+- PR/MR asks others to review before merging.

@@ -1,7 +1,7 @@
 # Links
 
-- Feishu:
-- GitLab:
+- Cloud docs:
+- GitHub/GitLab:
 - Assets:
 - Data:
 - External:
