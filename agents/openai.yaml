@@ -1,8 +1,8 @@
 interface:
   display_name: "Git and Go"
-  short_description: "Repo-first setup, commit, push, and PR/MR coach"
+  short_description: "GitHub repo-first setup, commit, push, and PR coach"
   brand_color: "#16A34A"
-  default_prompt: "Use $git-and-go to set up a repo if needed, repo-ize this work, review the diff, commit, push, and prepare PR/MR context."
+  default_prompt: "Use $git-and-go to set up a GitHub repo if needed, repo-ize this work, review the diff, commit, push, and prepare pull request context."
 
 policy:
   allow_implicit_invocation: true

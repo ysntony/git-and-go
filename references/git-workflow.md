@@ -1,6 +1,6 @@
 # Git Workflow
 
-Use this reference when the user asks to commit, push, create a pull request or merge request, or ship work.
+Use this reference when the user asks to commit, push, create a pull request, or ship work.
 
 ## Safety Rules
 
@@ -31,7 +31,7 @@ If the branch has no upstream yet, push with:
 git push -u origin <branch>
 ```
 
-If no remote exists, read `references/remote-repo-bootstrap.md`. Help the user create or connect a GitHub/GitLab repo, preferably with `gh` or `glab`.
+If no remote exists, read `references/github-repo-bootstrap.md`. Help the user create or connect a GitHub repo, preferably with `gh`.
 
 ## What to Ship
 
@@ -60,9 +60,9 @@ Useful prefixes:
 - `feat:` for user-facing tools or automations
 - `fix:` for correcting broken scripts, workflows, or docs
 
-## PR/MR Context
+## Pull Request Context
 
-If creating or preparing a pull request or merge request, include:
+If creating or preparing a pull request, include:
 
 ```markdown
 ## What changed
@@ -105,4 +105,4 @@ When users are learning Git, keep explanations short:
 - `add` chooses what goes into the commit.
 - `commit` records a checkpoint.
 - `push` sends local work to the remote repo.
-- PR/MR asks others to review before merging.
+- A pull request asks others to review before merging.

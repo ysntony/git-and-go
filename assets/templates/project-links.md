@@ -1,7 +1,7 @@
 # Links
 
 - Cloud docs:
-- GitHub/GitLab:
+- GitHub:
 - Assets:
 - Data:
 - External:

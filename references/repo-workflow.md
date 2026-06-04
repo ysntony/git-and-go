@@ -19,7 +19,7 @@ Do not create all folders automatically. Create only what the current task needs
 
 ## Personal Repo First
 
-If there is no shared repo yet, a user's own GitHub or GitLab repo is a valid starting point.
+If there is no shared repo yet, a user's own GitHub repo is a valid starting point.
 
 Prefer one personal workspace repo per person, for example:
 
@@ -39,7 +39,7 @@ scripts/
 
 This keeps the barrier low while still building repo-first habits. The personal repo can be the current source of truth until a shared repo exists. Later, project folders can be copied or migrated into the shared repo.
 
-When the personal repo does not exist yet, use `references/remote-repo-bootstrap.md` to create it with `gh`, `glab`, or the provider API before organizing project files.
+When the personal repo does not exist yet, use `references/github-repo-bootstrap.md` to create it with `gh` before organizing project files.
 
 ## Top-Level Meaning
 
@@ -47,7 +47,7 @@ When the personal repo does not exist yet, use `references/remote-repo-bootstrap
 - `knowledge/`: durable references, definitions, research notes, channel context, metrics notes, and tool notes.
 - `routines/`: recurring workflows such as weekly reviews, feedback digests, reporting, or repeated operational checks.
 - `templates/`: reusable source templates for project briefs, updates, reviews, and other artifacts.
-- `scripts/`: helper scripts for repeatable tasks, including optional GitHub/GitLab or cloud-tool helpers.
+- `scripts/`: helper scripts for repeatable tasks, including optional GitHub or cloud-tool helpers.
 
 ## Project Categories
 
@@ -137,7 +137,7 @@ Track source and collaboration links:
 # Links
 
 - Cloud docs:
-- GitHub/GitLab:
+- GitHub:
 - Assets:
 - Data:
 - External:
@@ -197,4 +197,4 @@ Both should reinforce:
 - repo-first durable artifacts
 - user-led work
 - diff before commit
-- remote repo creation with `gh`, `glab`, or provider APIs when needed
+- GitHub repo creation with `gh` when needed

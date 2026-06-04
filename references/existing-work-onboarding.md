@@ -10,7 +10,7 @@ Common sources:
 
 - cloud docs, sheets, tasks, meetings, or chat threads
 - local folders, screenshots, exports, creative assets, CSVs, or notes
-- links to dashboards, websites, GitHub, GitLab, Figma, or asset storage
+- links to dashboards, websites, GitHub, Figma, or asset storage
 - verbal context from the user
 
 ## Default Flow
@@ -35,20 +35,20 @@ Common sources:
 4. **Set the working memory**
    - `brief.md`: owner, context, goal, current status, open questions, next steps.
    - `updates.md`: dated progress and next action.
-   - `links.md`: GitHub/GitLab, cloud docs, assets, data, websites, dashboards, external references.
+   - `links.md`: GitHub, cloud docs, assets, data, websites, dashboards, external references.
    - `decisions.md`: dated decisions, rationale, owner, and source when useful.
 
 5. **Ship the first repo checkpoint**
    - Show changed files and meaningful diff.
    - Commit and push when the user asks to ship.
-   - Prepare PR/MR context that asks reviewers to check factual completeness and accuracy.
+   - Prepare pull request context that asks reviewers to check factual completeness and accuracy.
 
 ## Example User Request
 
 ```text
 Use $git-and-go to repo-ize my current project.
 It is a home renovation planning project. The context is in this cloud doc and this local folder.
-Create the project files, then help me commit, push, and prepare PR/MR context.
+Create the project files, then help me commit, push, and prepare pull request context.
 ```
 
 ## Review Standard
